@@ -36,19 +36,15 @@ f_reverse = e_digit*100 + d_digit*10 + b_digit
 print(a_initial)
 print(f_reverse)
 
-additional_str = "добавочная строка"
-existing_str = "Это строка, в которую {} новую строку"
-new_str = "existing_str {additional_str}"
+additional_str = input('Введите что-нибудь:')
+existing_str = "Это строка, в которую {} новую строку".format(additional_str)
+new_add = 'замена в строке'
+new_str = "Это строка, в которую {} новую строку".format(new_add)
+print(existing_str)
 print(new_str)
-new1_str = "existing_str {\"замена в строке\"}"
-print(new1_str)
-print(len(new1_str))
+print(len(new_str))
 
-if 
-
-
-
-
-
-
-
+if "строка" in new_str:
+    print("Да")
+else:
+    print("Нет")
