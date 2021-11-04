@@ -16,9 +16,11 @@ d = '*'
 s = 0
 p = '         '
 m = 7
+#a = 0
 
 while s < 7:
-    print(p[0:m] + (d * i))
+    a = print(p[0:m] + (d * i))
+    #a.reverse()
     i += 1
     m -= 1
     s += 1
