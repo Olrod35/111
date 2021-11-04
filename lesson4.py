@@ -10,9 +10,23 @@ print(a)
 for _ in range(3):
     b = b + 2
     print(b)'''
-fig_height = input()
+
+i = 1
+d = '*'
+s = 0
+p = '         '
+m = 7
+
+while s < 7:
+    print(p[0:m] + (d * i))
+    i += 1
+    m -= 1
+    s += 1
+
+
+'''fig_height = input()
 for i in range(fig_height):
     i = '*************'
-    print(i)
+    print(i)'''
 
 
