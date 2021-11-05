@@ -1,3 +1,13 @@
+d = '*'
+n = int(input('Введите высоту треугольника: '))
+d = '*'
+p = n * " "
+m = n
+for i in range(n):
+    a = print(p[0:m] + d * (i + 1) + d * i)
+    m -= 1
+
+
 
 '''i = 1
 d = '*'
@@ -14,14 +24,7 @@ m = n
     s += 1
     '''
 
-d = '*'
-n = int(input('Введите высоту треугольника: '))
-d = '*'
-p = n * " "
-m = n
-for i in range(n):
-    a = print(p[0:m] + d * (i + 1) + d * i)
-    m -= 1
+
 
 
 
