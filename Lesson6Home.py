@@ -41,14 +41,16 @@ dict_2 = {'z': 1, 'x': 9, 'c': 6, ....}
 import string
 string.ascii_letters"""
 dict_1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 99}
-dict_2 = {'z': 1, 'x': 9, 'c': 6, 'm': 125, 'k': 55}
+dict_2 = {'z': 1, 'x': 9, 'c': 6, 'm': 125, 'e': 55}
 dict_3 = {**dict_1, **dict_2}
 print(dict_3)
 dict_4 = {}
 for k, v in dict_1.items():
-    if k in dict_1.keys():
-        v = dict_2[k] if v > dict_1[k] else v
-    dict_4[k] = v
-
+    for k1, v1 in dict_2.items():
+        if k == k1:
+            dict_4 = {k: v}
 print(dict_4)
+
+
+
 
