@@ -44,4 +44,11 @@ dict_1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 99}
 dict_2 = {'z': 1, 'x': 9, 'c': 6, 'm': 125, 'k': 55}
 dict_3 = {**dict_1, **dict_2}
 print(dict_3)
-dict_4 =
+dict_4 = {}
+for k, v in dict_1.items():
+    if k in dict_1.keys():
+        v = dict_2[k] if v > dict_1[k] else v
+    dict_4[k] = v
+
+print(dict_4)
+
