@@ -44,3 +44,4 @@ dict_1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 99}
 dict_2 = {'z': 1, 'x': 9, 'c': 6, 'm': 125, 'k': 55}
 dict_3 = {**dict_1, **dict_2}
 print(dict_3)
+dict_4 =
