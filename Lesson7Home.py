@@ -3,5 +3,11 @@
 периметр квадрата, площадь квадрата и диагональ квадрата."""
 
 def square(side):
-    return per = side * 4
-print(per)
+    per = side * 4
+    sq = side * side
+    diag = (2 * (side ** 2)) ** 0.5
+    return (per, sq, diag)
+
+result1 = square(5)
+print(result1)
+
