@@ -17,7 +17,7 @@ print(result1)
 то вычесть; * — умножить; / — разделить (первое на второе). В остальных случаях вернуть строку "Неизвестная 
 операция"."""
 
-def myfunc(a, b, z):
+def arithmetic(a, b, z):
     if z == '+':
         c = a+b
     elif z == '-':
@@ -30,4 +30,4 @@ def myfunc(a, b, z):
     return c
 
 z = input("Введите операцию '+','-','*' или '/': ")
-print(myfunc(5, 6, z))
+print(arithmetic(5, 6, z))
