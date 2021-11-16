@@ -41,15 +41,13 @@ checkio(999) == 729
 checkio(1000) == 1
 checkio(1111) == 1"""
 
-import math
-
 def checkio(k):
     stroka = str(k)
     spisok = []
     for i in stroka:
         spisok.append(int(i))
+    proizv = 1
     for i in spisok:
-        proizv = 1
         if i != 0:
             proizv *= i
     return proizv
