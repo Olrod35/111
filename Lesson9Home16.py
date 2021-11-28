@@ -6,32 +6,29 @@ username and password получать из командной строки ка
 Если передать только имя, то спрашивать только пароль, и наоборот, спрашивать пароль если передать только имя.
 Основная идея в том что-бы расширить функционал прошлой программы, а не переписывать!"""
 
-from functools import wraps
-
 USERS = {
     'Olha': '111111',
     'Talia': '222222'
 }
 
 def decorator_for_login(func):
-    def wrapper(username, password):
-        if not check_password(username, password):
+    def wrapper(username, password=USERS.get('Olha')):
+        if not check_password(username, password=USERS.get('Olha')):
             return False
         if not auth():
             return False
-        return func(username, password)
+        return func(username, password=USERS.get('Olha'))
     return wrapper
 
 def auth():
     return True
 
-def check_password(username, password):
+def check_password(username, password=USERS.get('Olha')):
     if USERS.get(username) == password:
         return True
-    #return USERS.get(username) == password
 
 @decorator_for_login
-def login(username, password):
+def login(username, password=USERS.get('Olha')):
     print("Вы в системе!")
     return True
 
